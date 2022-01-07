@@ -1,0 +1,167 @@
+.form-container {
+  display: flex;
+  flex-direction: column;
+
+  padding: 40px;
+}
+.form-container__modal-header {
+  text-align: center;
+
+  @include text(700, 20px, 1.15, 00.03em);
+  //font-weight: 700;
+  //font-size: 20px;
+  //line-height: 1.15;
+  //letter-spacing: 0.03em;
+
+  color: var(--title-text-color);
+
+  padding: 0;
+  margin-top: 0px;
+  margin-bottom: 12px;
+}
+.form-container__modal-label {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+
+  margin-bottom: 10px;
+
+  @include text-fw400(12px, 1.16, 0.01em);
+  //font-size: 12px;
+  //line-height: 1.16;
+  ///* identical to box height */
+  //letter-spacing: 0.01em;
+
+  color: var(--text-color);
+  &:nth-child(4) {
+    margin-bottom: 20px;
+  }
+}
+
+.form-container__modal-input {
+  display: block;
+  width: 448px;
+  height: 40px;
+
+  padding: 0;
+  padding-left: 42px;
+  margin-top: 4px;
+
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+  outline: none;
+
+  @include text-fw400(14px, 1.14, 00.01em);
+  //font-size: 14px;
+  //line-height: 1.14;
+  //letter-spacing: 0.01em;
+  color: var(--text-color);
+
+  transition-property: border;
+  @include animation-durationandtiming();
+  &:focus {
+    border: 1px solid var(--accent-color);
+  }
+  &:focus + .form-container__modal-icon {
+    fill: var(--accent-color);
+  }
+  &::placeholder {
+    @include text-fw400(14px, 1.14, 00.01em);
+    //font-size: 14px;
+    //line-height: 1.14;
+    //letter-spacing: 0.01em;
+    color: rgba(117, 117, 117, 0.5);
+  }
+}
+.form-container__modal-icon {
+  position: absolute;
+  left: 12px;
+  bottom: 11px;
+
+  width: 18px;
+  height: 18px;
+
+  color: var(--title-text-color);
+  fill: currentColor;
+
+  transition-property: fill;
+  @include animation-durationandtiming();
+}
+
+.form-container__modal-input.comment {
+  min-height: 120px;
+  resize: none;
+  padding-top: 12px;
+  padding: 12px;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.form-container__modal-label.check {
+  @include flex-centered();
+  //display: flex;
+  //align-items: center;
+  flex-direction: row;
+  justify-content: center;
+
+  margin-bottom: 30px;
+
+  @include text-fw400(14px, 1.71, 00.03em);
+  //font-size: 14px;
+  //line-height: 1.71;
+  ///* identical to box height, or 171% */
+  //letter-spacing: 0.03em;
+
+  color: var(--text-color);
+}
+.form-container__modal-input.checkbox {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+  &:checked + .form-container__check-item {
+    background-color: var(--accent-color);
+    border-color: var(--accent-color);
+  }
+}
+.form-container__modal-label {
+  .link {
+    text-decoration-line: underline;
+
+    color: var(--accent-color);
+  }
+}
+.form-container {
+  .button {
+    display: block;
+    margin: auto;
+  }
+}
+.form-container__check-item {
+  @include flex-centered();
+  justify-content: center;
+
+  height: 15px;
+  width: 16px;
+
+  margin-right: 8px;
+
+  border: 2px solid var(--title-text-color);
+  border-radius: 2px;
+
+  transition-property: color, background-color, border;
+  @include animation-durationandtiming();
+  &:hover,
+  &:focus {
+    border: 2px solid var(--accent-color);
+  }
+}
+.form-container__check-icon {
+  fill: white;
+}

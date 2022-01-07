@@ -1,0 +1,19 @@
+@mixin text($fw, $fz, $lh, $ls) {
+  font-weight: $fw;
+  font-size: $fz;
+  line-height: $lh;
+  letter-spacing: $ls;
+}
+@mixin text-fw400($fz, $lh, $ls) {
+  font-size: $fz;
+  line-height: $lh;
+  letter-spacing: $ls;
+}
+@mixin animation-durationandtiming() {
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+@mixin flex-centered($ai: center) {
+  display: flex;
+  align-items: $ai;
+}

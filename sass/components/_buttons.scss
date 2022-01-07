@@ -1,0 +1,33 @@
+.button {
+  display: inline-block;
+  text-align: center;
+  border-radius: 4px;
+  padding: 10px 32px;
+  border: none;
+
+  color: var(--title-text-color);
+  background-color: var(--secondary-background-color);
+}
+.button--primary {
+  min-height: 50px;
+  min-width: 200px;
+
+  align-items: center;
+  color: var(--background-color);
+  background-color: var(--accent-color);
+  @include text(700, 16, 1.87, 00.06em);
+  //font-weight: 700;
+  //font-size: 16px;
+  //line-height: 1.87;
+  ///* identical to box height, or 187% */
+  //letter-spacing: 0.06em;
+
+  transition-property: background-color;
+  @include animation-durationandtiming();
+
+  &:hover,
+  &:focus {
+    color: var(--background-color);
+    background-color: var(--hover-color);
+  }
+}
