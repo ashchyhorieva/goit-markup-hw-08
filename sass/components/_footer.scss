@@ -32,6 +32,10 @@
 .footer-contacts {
   @include text-fw400(14px, 1.71, 0.03em);
   margin-bottom: 60px;
+
+  @media screen and(min-width:768px) {
+    margin-right: 165px;
+  }
 }
 
 .footer__address {
@@ -93,8 +97,6 @@
   //margin-right: 93px;
 }
 
-.footer-subscribe {
-}
 .footer-form {
   //@include flex-centered();
   display: flex;
@@ -144,5 +146,12 @@
     justify-content: space-between;
     padding-left: 29px;
     padding-right: 28px;
+  }
+}
+
+.footer__tablet {
+  @media screen and(min-width:768px) {
+    display: flex;
+    justify-content: center;
   }
 }
