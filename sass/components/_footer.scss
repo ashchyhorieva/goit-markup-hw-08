@@ -5,9 +5,8 @@
 }
 .footer {
   .container {
-    @include flex-centered(baseline);
-    //display: flex;
-    //align-items: baseline;
+    //@include flex-centered(baseline);
+    //justify-content: center;
   }
 }
 
@@ -22,19 +21,26 @@
 }
 
 .footer-contacts {
-  flex-grow: 1;
-  margin-right: 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  //flex-grow: 1;
+  //margin-right: 70px;
 }
 
 .footer-contacts {
   @include text-fw400(14px, 1.71, 0.03em);
+  margin-bottom: 60px;
 }
 
 .footer__address {
   color: var(--background-color);
-  margin-bottom: 9px;
+  margin-bottom: 8px;
+  //margin-bottom: 9px;
 
   font-style: normal;
+  text-align: center;
 
   transition-property: color;
   @include animation-durationandtiming();
@@ -54,7 +60,13 @@
 }
 
 .footer__mail {
-  margin-bottom: 9px;
+  margin-bottom: 8px;
+  //margin-bottom: 9px;
+  text-align: center;
+}
+
+.footer__tel {
+  text-align: center;
 }
 
 .footer-socail__link {
@@ -70,23 +82,31 @@
   margin-bottom: 20px;
   margin-top: 0px;
 
-  @include flex-centered(flex-start);
+  @include flex-centered($ai: center);
+  //@include flex-centered(flex-start);
   //display: flex;
   //align-items: flex-start;
   flex-direction: column;
 }
 .footer-social {
-  margin-right: 93px;
+  margin-bottom: 60px;
+  //margin-right: 93px;
 }
 
+.footer-subscribe {
+}
 .footer-form {
-  @include flex-centered();
-  width: 570px;
+  //@include flex-centered();
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  //width: 570px;
 }
 .footer-form__input {
-  width: 358px;
+  //width: 358px;
+  width: 450px;
   height: 50px;
-  margin: 0px;
+  margin: 0px 0px 20px 0px;
 
   padding-left: 16px;
   padding-top: 15px;
@@ -116,7 +136,7 @@
 }
 
 .footer-form__label {
-  margin-right: 12px;
+  //margin-right: 12px;
 }
 .footer {
   .button--primary {

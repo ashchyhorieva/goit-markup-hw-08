@@ -7,7 +7,7 @@
 .form-container__modal-header {
   text-align: center;
 
-  @include text(700, 20px, 1.15, 00.03em);
+  @include text(700, 20px, 1.5, 00.03em);
   //font-weight: 700;
   //font-size: 20px;
   //line-height: 1.15;
@@ -41,7 +41,8 @@
 
 .form-container__modal-input {
   display: block;
-  width: 448px;
+  //width: 448px;
+  width: 370px;
   height: 40px;
 
   padding: 0;
@@ -100,15 +101,14 @@
 }
 
 .form-container__modal-label.check {
-  @include flex-centered();
-  //display: flex;
+  display: flex;
   //align-items: center;
   flex-direction: row;
-  justify-content: center;
 
   margin-bottom: 30px;
 
-  @include text-fw400(14px, 1.71, 00.03em);
+  @include text-fw400(12px, 1.67, 00.03em);
+  //@include text-fw400(14px, 1.71, 00.03em);
   //font-size: 14px;
   //line-height: 1.71;
   ///* identical to box height, or 171% */

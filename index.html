@@ -58,12 +58,13 @@
                         +38 096 111 11 11</a>
                 </li>
             </ul>
+                        <button type="button" class="open-menu-button">
+                            <svg width="40" height="40" aria-label="Переключатель мобильного меню">
+                                <use class="icon-menu" href="./images/sprite.svg#icon-menu_40px"></use>
+                            </svg>
+                        </button>
             </div>
-            <button type="button" class="open-menu-button" >
-                <svg width="40" height="40" aria-label="Переключатель мобильного меню">
-                    <use class="icon-menu" href="./images/sprite.svg#icon-menu_40px"></use>
-                </svg>
-            </button>
+
     </header>
     <main>
         <section class="hero section">
@@ -111,7 +112,7 @@
                         <use href="./images/icons.svg#icon-Vector_check"></use>
                         </svg>
                     </span>
-                    Соглашаюсь с рассылкой и принимаю &nbsp;<a href="" class="link " target="blank">Условия договора</a>
+                    Соглашаюсь с рассылкой и принимаю &nbsp;<a href="" class="link " target="blank">Условия&nbsp;договора</a>
                 </label>
                 <button type="submit" class="button button--primary ">Отправить</button>
             </form>
@@ -129,7 +130,7 @@
                             <use href="./images/sprite.svg#icon-antenna" ></use>
                         </svg>
                         </div>
-                        <h3 class="features__title title">Внимание к деталям</h3>
+                        <h3 class="features__title ">Внимание к деталям</h3>
                         <p class="features__description">Идейные соображения, а также начало повседневной работы по
                             формированию позиции.</p>
                     </li>
@@ -139,7 +140,7 @@
                             <use href="./images/sprite.svg#icon-clock" ></use>
                         </svg>
                         </div>
-                        <h3 class="feature-section__title title">Пунктуальность</h3>
+                        <h3 class="features__title ">Пунктуальность</h3>
                         <p class="features__description">Задача организации, в особенности же рамки и место обучения
                             кадров влечет за собой.</p>
                     </li>
@@ -149,7 +150,7 @@
                             <use href="./images/sprite.svg#icon-diagram" ></use>
                         </svg>
                         </div>
-                        <h3 class="features__title title">Планирование</h3>
+                        <h3 class="features__title ">Планирование</h3>
                         <p class="features__description">Равным образом консультация с широким активом в значительной
                             степени обуславливает.</p>
                     </li>
@@ -159,7 +160,7 @@
                             <use href="./images/sprite.svg#icon-astronaut" ></use>
                         </svg>
                         </div>
-                        <h3 class="features__title title">Современные технологии</h3>
+                        <h3 class="features__title ">Современные технологии</h3>
                         <p class="features__description">Значимость этих проблем настолько очевидна, что реализация
                             плановых заданий.</p>
                     </li>
@@ -202,7 +203,29 @@
                 <h2 class="section__title">Наша команда</h2>
                 <ul class="team">
                     <li class="team-item">
-                        <img  src="./images/img.jpg" alt="Фото Игоря" width="270" height="260" />
+                        <picture>
+                            <source
+                            srcset="
+                            ./images/img.jpg 1x,
+                            ./images/designer-540@2x.jpg 2x"
+                            media="(min-width:1200px)"
+                            >
+                            <source
+                            srcset="
+                            ./images/designer-354.jpg 1x,
+                            ./images/designer-708@2x.jpg 2x"
+                            media="(min-width:768px)"
+                            >
+                            <source
+                            srcset="
+                            ./images/designer-450.jpg 1x,
+                            ./images/designer-900@2x.jpg 2x"
+                            media="(min-width:480px)"
+                            >
+                        <img  
+                        src="./images/img.jpg" 
+                        alt="Фото Игоря" />
+                        </picture>
                         <div class="team__thumb">
                         <h3 class="team__title">Игорь Демьяненко</h3>
                         <p lang="en" class="team__description">Product Designer</p>
@@ -243,7 +266,28 @@
                         </div>
                     </li>
                     <li class="team-item">
-                        <img  src="./images/img2.jpg" alt="Фото Ольги" width="270" height="260" />
+                        <picture>
+                            <source
+                            srcset="
+                            ./images/img2.jpg 1x,
+                            ./images/frontend-540@2x.jpg 2x"
+                            media="(min-width:1200px)"
+                            >
+                            <source
+                            srcset="
+                            ./images/frontend-354.jpg 1x,
+                            ./images/frontend-708@2x.jpg 2x"
+                            media="(min-width:768px)"
+                            >
+                            <source
+                            srcset="
+                            ./images/frontend-450.jpg 1x,
+                            ./images/frontend-900@2x.jpg 2x"
+                            media="(min-width:480px)"
+                            >
+                        <img  src="./images/img2.jpg" 
+                        alt="Фото Ольги"  />
+                        </picture>
                         <div class="team__thumb">
                         <h3 class="team__title">Ольга Репина</h3>
                         <p lang="en" class="team__description">Frontend Developer</p>
@@ -284,7 +328,28 @@
                         </div>
                     </li>
                     <li class="team-item">
-                        <img  src="./images/img3.jpg" alt="Фото Николая" width="270" height="260" />
+                        <picture>
+                            <source
+                            srcset="
+                            ./images/img3.jpg 1x,
+                            ./images/marketing-540@2x.jpg 2x"
+                            media="(min-width:1200px)"
+                            >
+                            <source
+                            srcset="
+                            ./images/marketing-354.jpg 1x,
+                            ./images/marketing-708@2x.jpg 2x"
+                            media="(min-width:768px)"
+                            >
+                            <source
+                            srcset="
+                            ./images/marketing-450.jpg 1x,
+                            ./images/marketing-900@2x.jpg 2x"
+                            media="(min-width:480px)"
+                            >
+                        <img  src="./images/img3.jpg" 
+                        alt="Фото Николая" />
+                        </picture>
                         <div class="team__thumb">
                         <h3 class="team__title">Николай Тарасов</h3>
                         <p lang="en" class="team__description">Marketing</p>
@@ -325,7 +390,28 @@
                         </div>
                     </li>
                     <li class="team-item">
-                        <img  src="./images/img4.jpg" alt="Фото Михаила" width="270" height="260" />
+                        <picture>
+                            <source
+                            srcset="
+                            ./images/img4.jpg 1x,
+                            ./images/ui-540@2x.jpg 2x"
+                            media="(min-width:1200px)"
+                            >
+                            <source
+                            srcset="
+                            ./images/ui-354.jpg 1x,
+                            ./images/ui-708@2x.jpg 2x"
+                            media="(min-width:768px)"
+                            >
+                            <source
+                            srcset="
+                            ./images/ui-450.jpg 1x,
+                            ./images/ui-900@2x.jpg 2x"
+                            media="(min-width:480px)"
+                            >
+                        <img  src="./images/img4.jpg" 
+                        alt="Фото Михаила" />
+                        </picture>
                         <div class="team__thumb">
                         <h3 class="team__title">Михаил Ермаков</h3>
                         <p lang="en" class="team__description">UI Designer</p>
@@ -427,7 +513,7 @@
                     target="_blank" class="footer__address">г. Киев, пр-т Леси Украинки, 26</a> 
                 <ul class="auth-nav">
                     <li class="footer__mail"><a href="mailto:info@devstudio.com" class="auth-nav__link footer-contacts__link" >info@devstudio.com</a></li>
-                    <li><a href="tel:+380961111111" class="auth-nav__link footer-contacts__link">+38 096 111 11 11</a></li>
+                    <li class="footer__tel"><a href="tel:+380961111111" class="auth-nav__link footer-contacts__link">+38 096 111 11 11</a></li>
                 </ul>
             </address>
             </div>

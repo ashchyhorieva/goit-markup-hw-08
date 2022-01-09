@@ -1,3 +1,11 @@
+.section {
+  &.section--no-padding-top {
+    @media screen and(max-width:1200px ) {
+      display: none;
+    }
+  }
+}
+
 .works {
   display: flex;
 }
