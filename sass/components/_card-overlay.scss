@@ -33,12 +33,16 @@
   transform: translate(-50%, -50%);
 
   margin: 0;
-  width: 322px;
+  width: 402px;
+  //width: 322px;
 
   @include text-fw400(18px, 1.56, 00.03em);
-  //font-size: 18px;
-  //line-height: 1.56;
-  ///* or 156% */
-  //letter-spacing: 0.03em;
   color: var(--overlay-text-color);
+
+  @media screen and(min-width:768px) {
+    width: 306px;
+  }
+  @media screen and(min-width:1200px) {
+    width: 322px;
+  }
 }

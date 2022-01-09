@@ -1,6 +1,6 @@
 .clients {
   display: flex;
-  //justify-content: center;
+  justify-content: center;
   flex-wrap: wrap;
 }
 .clients__item {
@@ -16,7 +16,7 @@
   margin-right: 30px;
   margin-bottom: 30px;
 
-  @media screen and(max-width:767px) {
+  @media screen and(max-width:767.9px) {
     &:nth-child(2n + 2) {
       margin-right: 0px;
     }

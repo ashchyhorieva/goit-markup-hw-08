@@ -3,11 +3,6 @@
   min-width: 73px;
 
   @include text(500, 16px, 1.62, 00.03em);
-  //font-weight: 500;
-  //font-size: 16px;
-  //line-height: 1.62;
-  ///* identical to box height, or 162% */
-  //letter-spacing: 0.03em;
 
   transition-property: color, background-color, box-shadow;
   @include animation-durationandtiming();
