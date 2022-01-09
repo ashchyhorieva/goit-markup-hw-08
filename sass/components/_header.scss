@@ -1,4 +1,5 @@
 .page-header {
+  position: relative;
   background-color: var(--background-color);
   align-items: center;
   border-bottom: 1px solid var(--border-color-header);
@@ -79,7 +80,8 @@
 }
 
 .site-nav {
-  display: flex;
+  //display: flex;
+  display: none;
 }
 .site-nav__item {
   display: block;
@@ -90,9 +92,8 @@
 }
 
 .page-header__auth-nav {
-  @include flex-centered();
-  //display: flex;
-  //align-items: center;
+  //@include flex-centered();
+  display: none;
   margin-left: auto;
   justify-content: center;
 }
@@ -111,4 +112,8 @@
 
 .nav {
   @include flex-centered();
+}
+
+.open-menu-button {
+  margin-left: auto;
 }
