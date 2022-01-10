@@ -94,6 +94,15 @@
   border: none;
   background-color: transparent;
 
+  fill: currentColor;
+
+  transition-property: fill;
+  @include animation-durationandtiming();
+  &:hover,
+  &:focus {
+    fill: var(--accent-color);
+  }
+
   @media screen and(min-width:767.9px) {
     display: none;
   }

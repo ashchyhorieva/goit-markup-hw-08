@@ -622,6 +622,16 @@ a {
   margin-left: auto;
   border: none;
   background-color: transparent;
+  fill: currentColor;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.close-menu-button:hover, .close-menu-button:focus,
+.open-menu-button:hover,
+.open-menu-button:focus {
+  fill: var(--accent-color);
 }
 
 @media screen and (min-width: 767.9px) {
