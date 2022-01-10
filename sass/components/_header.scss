@@ -3,8 +3,6 @@
   background-color: var(--background-color);
   align-items: center;
   border-bottom: 1px solid var(--border-color-header);
-  /*padding-top: 24px;
-  padding-bottom: 24px;*/
 }
 
 .container__page-header {
@@ -13,19 +11,21 @@
 
 .page-header {
   .logo {
-    margin-right: 93px;
-    padding-top: 24px;
-    padding-bottom: 24px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    margin-right: 88px;
+
+    @media screen and(min-width:1200px) {
+      padding-top: 24px;
+      padding-bottom: 24px;
+      margin-right: 93px;
+    }
   }
 }
 .site-nav__link {
   color: var(--title-text-color);
 
   @include text(500, 14px, 1.14, 00.02em);
-  //font-weight: 500;
-  //font-size: 14px;
-  //line-height: 1.14;
-  //letter-spacing: 0.02em;
 
   padding-top: 32px;
   padding-bottom: 32px;
@@ -62,14 +62,7 @@
 
   color: var(--text-color);
 
-  @include text(500, 14px, 1.14, 00.02em);
-  //font-weight: 500;
-  //font-size: 14px;
-  //line-height: 1.14;
-  //letter-spacing: 0.02em;
-
-  padding-top: 32px;
-  padding-bottom: 32px;
+  @include text(500, 12px, 1.17, 00.02em);
 
   transition-property: color;
   @include animation-durationandtiming();
@@ -77,11 +70,20 @@
   &:focus {
     color: var(--accent-color);
   }
+  @media screen and(min-width:1200px) {
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    @include text(500, 14px, 1.14, 00.02em);
+  }
 }
 
 .site-nav {
-  //display: flex;
-  display: none;
+  display: flex;
+  margin-right: 84px;
+  @media screen and(max-width:767.9px) {
+    display: none;
+  }
 }
 .site-nav__item {
   display: block;
@@ -92,17 +94,30 @@
 }
 
 .page-header__auth-nav {
-  //@include flex-centered();
-  display: none;
   margin-left: auto;
   justify-content: center;
+
+  @media screen and(max-width:767.9px) {
+    display: none;
+  }
+
+  @media screen and(min-width:1200px) {
+    display: flex;
+  }
 }
 
 .auth-nav__item {
   display: block;
-  margin-right: 50px;
+  margin-bottom: 10px;
   &:last-child {
-    margin-right: 0;
+    margin-bottom: 0;
+  }
+  @media screen and(min-width:1200px) {
+    margin-bottom: 0;
+    margin-right: 50px;
+    &:last-child {
+      margin-right: 0;
+    }
   }
 }
 
