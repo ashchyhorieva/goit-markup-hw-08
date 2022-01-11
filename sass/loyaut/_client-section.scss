@@ -10,11 +10,16 @@
   justify-content: center;
 
   max-width: 210px;
+  //width: calc((100%-30px * 1) / 2);
   height: 92px;
 
   padding: 0;
   margin-right: 30px;
   margin-bottom: 30px;
+
+  @media screen and(min-width:480px) {
+    width: 210px;
+  }
 
   @media screen and(max-width:767.9px) {
     &:nth-child(2n + 2) {
@@ -53,6 +58,8 @@
   //align-items: center;
   justify-content: center;
 
+  //align-content: stretch;
+  //flex-grow: 2;
   max-width: 210px;
   /*
 Добавила правило с @media screen and(min-width:480px), на 320px начало нормальноработать, бардак на 414px начинается.

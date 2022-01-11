@@ -1060,6 +1060,12 @@ a {
   margin-bottom: 30px;
 }
 
+@media screen and (min-width: 480px) {
+  .clients__item {
+    width: 210px;
+  }
+}
+
 @media screen and (max-width: 767.9px) {
   .clients__item:nth-child(2n + 2) {
     margin-right: 0px;
