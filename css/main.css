@@ -1302,8 +1302,17 @@ a {
 }
 
 .footer-form__label {
+  width: 100%;
   margin-right: auto;
   margin-left: auto;
+}
+
+@media screen and (min-width: 768px) {
+  .footer-form__label {
+    margin-left: auto;
+    margin-right: auto;
+    width: 450px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
