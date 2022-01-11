@@ -4,7 +4,7 @@
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
 
-  min-width: 450px;
+  width: 100%;
 
   background-color: white;
   opacity: 1;
@@ -12,8 +12,12 @@
   transition-property: transform, opacity;
   @include animation-durationandtiming();
 
-  @media screen and(min-width:768) {
-    min-width: 528px;
+  @media screen and(min-width:480px) {
+    width: 450px;
+  }
+
+  @media screen and(min-width:1200px) {
+    width: 528px;
   }
 }
 .modal__close {
