@@ -72,7 +72,7 @@
         </svg>
     </button>
     <ul class="mob-nav ">
-        <li class="mob-nav__item "><a href="index.html" class="mob-nav__link ">Студия</a></li>
+        <li class="mob-nav__item "><a href="index.html" class="mob-nav__link mob-nav--current ">Студия</a></li>
         <li class="mob-nav__item "><a href="portfolio.html" class="mob-nav__link ">Портфолио</a></li>
         <li class="mob-nav__item"><a href="" class="mob-nav__link ">Контакты</a></li>
     </ul>
@@ -214,7 +214,15 @@
                 <ul class="works">
                     <li class="works__item">
                         <div class="works__thumb">
-                        <img src="./images/box1.jpg" alt="Работа с алгоритмом и кодом" width="370" height="294" />
+                            <picture>
+                                <source
+                            srcset="
+                            ./images/box1.jpg 1x,
+                            ./images/work-1-740@2x.jpg 2x"
+                            media="(min-width:1200px)"
+                            >
+                        <img src="./images/box1.jpg" alt="Работа с алгоритмом и кодом"  />
+                        </picture>
                         <div class="works__overlay">
                         <p class="works__text">Десктопные приложения</p>
                         </div>
@@ -222,7 +230,15 @@
                     </li>
                     <li class="works__item">
                         <div class="works__thumb">
-                        <img src="./images/box2.jpg" alt="Подбор вайфрейма" width="370" height="294" />
+                            <picture>
+                                <source
+                            srcset="
+                            ./images/box2.jpg 1x,
+                            ./images/work-2-740@2x.jpg 2x"
+                            media="(min-width:1200px)"
+                            >
+                        <img src="./images/box2.jpg" alt="Подбор вайфрейма"  />
+                            </picture>
                     <div class="works__overlay">
                         <p class="works__text">Мобильные приложения</p>
                     </div>
@@ -230,7 +246,15 @@
                     </li>
                     <li class="works__item">
                         <div class="works__thumb">
-                        <img src="./images/box3.jpg" alt="ВЫбор цветовой палитры" width="370" height="294" />
+                            <picture>
+                                <source
+                            srcset="
+                            ./images/box3.jpg 1x,
+                            ./images/work-3-740@2x.jpg 2x"
+                            media="(min-width:1200px)"
+                            >
+                        <img src="./images/box3.jpg" alt="ВЫбор цветовой палитры"  />
+                            </picture>
                     <div class="works__overlay">
                         <p class="works__text">Дизайнерские решения</p>
                     </div>
@@ -261,7 +285,7 @@
                             srcset="
                             ./images/designer-450.jpg 1x,
                             ./images/designer-900@2x.jpg 2x"
-                            media="(min-width:480px)"
+                            //media="(min-width:480px)"
                             >
                         <img  
                         src="./images/img.jpg" 
@@ -324,7 +348,7 @@
                             srcset="
                             ./images/frontend-450.jpg 1x,
                             ./images/frontend-900@2x.jpg 2x"
-                            media="(min-width:480px)"
+                            //media="(min-width:480px)"
                             >
                         <img  src="./images/img2.jpg" 
                         alt="Фото Ольги"  />
@@ -386,7 +410,7 @@
                             srcset="
                             ./images/marketing-450.jpg 1x,
                             ./images/marketing-900@2x.jpg 2x"
-                            media="(min-width:480px)"
+                            //media="(min-width:480px)"
                             >
                         <img  src="./images/img3.jpg" 
                         alt="Фото Николая" />
@@ -448,7 +472,7 @@
                             srcset="
                             ./images/ui-450.jpg 1x,
                             ./images/ui-900@2x.jpg 2x"
-                            media="(min-width:480px)"
+                            //media="(min-width:480px)"
                             >
                         <img  src="./images/img4.jpg" 
                         alt="Фото Михаила" />
@@ -547,7 +571,7 @@
     </main>
     <footer class="footer">
         <div class="container">
-            <div class="footer__tablet">
+            <div class="footer__group">
         <div class="footer-contacts">
             <a href="index.html" class="logo  ">Web<span class="logo__white">Studio</span></a>
             <address>

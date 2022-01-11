@@ -25,6 +25,10 @@
   }
 }
 
+.mob-nav--current {
+  color: var(--accent-color);
+}
+
 .mob-nav__item {
   margin-bottom: 32px;
   &:last-child {
@@ -34,6 +38,10 @@
 
 .mob-nav {
   margin-bottom: 302px;
+}
+
+.mob-cont {
+  margin-bottom: auto;
 }
 
 .mob-contact__item {
