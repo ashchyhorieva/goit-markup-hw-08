@@ -716,7 +716,7 @@ a {
 }*/
 .container__hero {
   padding: 0;
-  width: 360px;
+  max-width: 360px;
 }
 
 @media screen and (min-width: 1200px) {
@@ -1053,7 +1053,7 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 210px;
+  max-width: 210px;
   height: 92px;
   padding: 0;
   margin-right: 30px;
@@ -1096,7 +1096,11 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 210px;
+  max-width: 210px;
+  /*
+Добавила правило с @media screen and(min-width:480px), на 320px начало нормальноработать, бардак на 414px начинается.
+но если добавить правила с 414 до 480, тогда будет лишняя точка в правиле..
+*/
   height: 92px;
   border: 1px solid var(--icon-page);
   border-radius: 4px;
@@ -1105,6 +1109,12 @@ a {
   transition-property: color, border;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (min-width: 480px) {
+  .clients__link {
+    width: 210px;
+  }
 }
 
 .clients__link:hover, .clients__link:focus {

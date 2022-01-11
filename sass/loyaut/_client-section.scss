@@ -9,7 +9,7 @@
   //align-items: center;
   justify-content: center;
 
-  width: 210px;
+  max-width: 210px;
   height: 92px;
 
   padding: 0;
@@ -53,13 +53,21 @@
   //align-items: center;
   justify-content: center;
 
-  width: 210px;
+  max-width: 210px;
+  /*
+Добавила правило с @media screen and(min-width:480px), на 320px начало нормальноработать, бардак на 414px начинается.
+но если добавить правила с 414 до 480, тогда будет лишняя точка в правиле..
+*/
   height: 92px;
   border: 1px solid var(--icon-page);
   border-radius: 4px;
 
   padding: 0;
   color: var(--icon-page);
+
+  @media screen and(min-width:480px) {
+    width: 210px;
+  }
 
   transition-property: color, border;
   @include animation-durationandtiming();
