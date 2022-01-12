@@ -33,8 +33,7 @@
   transform: translate(-50%, -50%);
 
   margin: 0;
-  max-width: 402px;
-  //width: 322px;
+  width: 90%;
 
   @include text-fw400(18px, 1.56, 00.03em);
   color: var(--overlay-text-color);

@@ -1501,7 +1501,7 @@ a {
   left: 50%;
   transform: translate(-50%, -50%);
   margin: 0;
-  max-width: 402px;
+  width: 90%;
   font-size: 18px;
   line-height: 1.56;
   letter-spacing: 0.03em;
